@@ -53,7 +53,7 @@ public class Main {
 //Выведите сумму накоплений за каждый месяц в консоль в формате: «Месяц …, сумма накоплений равна … рублей».
         int deposit = 29_000;
         int total = 0;
-        for (int month = 0; month <= 12; month = month + 1) {
+        for (int month = 1; month <= 12; month = month + 1) {
             total = total + deposit;
             System.out.println("Месяц " + month + " сумма накоплений равна " + total + " рублей");
         }
@@ -65,8 +65,8 @@ public class Main {
         int salary = 29_000;
         double box = 0;
 
-        for (int month = 0; month <= 12; month = month + 1) {
-            box = box * 0.12 + box;
+        for (int month = 1; month <= 12; month = month + 1) {
+            box = box * 0.01 + box;
             box = box + salary;
             System.out.println("Месяц " + month + " сумма накоплений равна " + box + " рублей");
         }
